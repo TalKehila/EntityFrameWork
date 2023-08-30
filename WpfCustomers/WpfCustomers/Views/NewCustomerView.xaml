@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="WpfCustomers.Views.NewCustomerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Name"/>
+        <TextBox x:Name="tbName" Grid.Column="1"/>
+
+        <TextBlock Text="Age" Grid.Row="1"/>
+        <TextBox x:Name="tbAge" Grid.Column="1" Grid.Row="1"/>
+
+        <Button Content="Add Customer" Click="AddCustomerClick" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</UserControl>
